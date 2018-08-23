@@ -1,0 +1,8 @@
+  753  mv ex2.txt ex2_2.txt
+  754  ls
+  755  mv ex2_2.txt ex2.txt
+  756  ls
+  757  cp ex2.txt ex2_copy.txt
+  758  rm ex2_copy.txt 
+  759  history
+  760  history | tail -n 8 > ex2.txt

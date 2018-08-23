@@ -1,0 +1,6 @@
+x86_64-linux-gnu-gcc-4.6
+x86_64-linux-gnu-gcc
+gcc-4.6
+gcc
+c99-gcc
+c89-gcc
