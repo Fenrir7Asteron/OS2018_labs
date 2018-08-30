@@ -94,7 +94,7 @@ void draw_square(int n) {
 
 int main(int argc, char *argv[]) {
     int n;
-    scanf("%d", &n);
+    sscanf(argv[1], "%d", &n); 
     draw_triangle(n);
     draw_right_triangle(n);
     draw_some_triangle(n);
