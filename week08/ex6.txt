@@ -1,0 +1,2 @@
+Since size of one page is 8 KB (8192 B), we need 13 bits in order to store one page. (2^13 = 8192)
+Other 3 bits may be used for storing # of page. So there should be 2^3 = 8 entries for a single-level linear page table.

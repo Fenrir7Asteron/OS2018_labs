@@ -1,0 +1,1 @@
+Virtual memory is like a large primary memory. For virtual memory there is no difference whether pages of data are stored in primary memory or in secondary memory. Virtual addresses are maped to physical addresses using MMU. Since virtual memory is large, several virtual addresses may share one physical address. Also there may be no mapping if page is swapped to secondary memory.
