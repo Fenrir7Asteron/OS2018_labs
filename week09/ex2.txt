@@ -1,0 +1,6 @@
+Increased:
+Sorted input will result to almost maximum hit ratio since same pages are very close.
+Decreased:
+Lets do a special kind of rearranging. If n is number of page frames then let k = 2 * n. k is a minimal distance between two equal pages in special rearranging. Lets rearrange every REPEATED pages in this way. Since sometimes it is not possible to place several last pages on this distance (if there are lots of repetitions) we'll just write them in the left spaces. We'll also can write unique pages in any place since they can not increase hit rate in any way.
+In order to see increased ratio using my solution you need to change name of input file in ex1.c to "input_sorted_ascending.txt" and run executable of ex1.c
+In order to see decreased ratio using my solution you need to change name of input file in ex1.c to "input_special_rearranging.txt", run executable of ex2_special_rearranger.c with some argument n and then run executable of ex1.c with THE SAME argument n.
