@@ -1,0 +1,12 @@
+   48  cd week01
+   49  ls
+   50  echo > file.txt
+   51  cd ..
+   52  cd week10
+   53  link ../week01/file.txt ex2.txt
+   61  find .. -inum 1185651
+   ../week10/ex2.txt
+   ../week01/file.txt
+   62  find .. -inum 1185651 -exec rm {} \;
+   63  echo > ex2.txt
+   64  history > ex2.txt

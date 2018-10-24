@@ -1,0 +1,13 @@
+   81  echo > _ex3.txt
+   82  ls -lg _ex3.txt
+   83  chmod a-x _ex3.txt
+   84  ls -lg _ex3.txt
+   86  chmod u+rwx,o+rwx  _ex3.txt
+   87  ls -lg _ex3.txt
+   88  chmod g=u  _ex3.txt
+   89  ls -lg _ex3.txt
+   90  history > ex3.txt
+   
+   If we convert 6, 6, 0 to binary, we'll get 110, 110, 000. So, for ex3.txt 660 means permissions -rw-rw----, so user and group have read/write permissions and other have no permissions.
+   Similarly, 775 is -rwxrwxr-x and 777 is -rwxrwxrwx.
+   P.S.: since ex3.txt is not a directory first bit is always '-', otherwise it would be 'd'.
