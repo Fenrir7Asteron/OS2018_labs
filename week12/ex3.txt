@@ -1,0 +1,3 @@
+Without O_SYNC program depends almost linearly on the buffer size because it shows ~1 second for 1024 byte buffer, ~1.7 seconds for 512 bytes, ~3.5 seconds for 256 bytes and ~6.2 seconds for 128 bytes. This was tested on a big (417.3 MiB) random string got from /dev/random. With O_SYNC program just hanged. For a small (5.7 MiB) string from /dev/random it works ~3 minutes and 30 seconds for 1024 byte buffer and ~7 minutes 9 seconds for 512 byte buffer.
+
+Analysis shown that the bigger the buffer, the faster copying is (approximately with linear dependence). O_SYNC make things really slow because it makes to wait until everything will not be written to the disc for every write() system call. The less the buffer, the more calls hence performance is greatly lost.
